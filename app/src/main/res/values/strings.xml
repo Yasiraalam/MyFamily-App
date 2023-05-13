@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MyFamily</string>
+    <string name="sos">SOS</string>
+    <string name="guard">GUARD</string>
+    <string name="security">Security</string>
+    <string name="myfamily">My Family</string>
+    <string name="card_text">In case of emergency,keep telling  family members to Contact me</string>
+    //bottom nav
+    <string name="home">Home</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="userName">Yasir Alam</string>
+    <string name="address">hyderpora Srinagar Jammu and kashmir</string>
+    <string name="wifi">WiFi</string>
+    <string name="distance">223M</string>
+    <string name="battery_percentage">90%</string>
+    <string name="Time_show">16:40</string>
+    <string name="invite">INVITE</string>
+    <string name="location">location</string>
+    <string name="menu">menu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_txt">Enter your Email</string>
+    <string name="password_txt">Enter Your Password</string>
+    <string name="login">Log In</string>
+    <string name="register_txt">Not Registered Yet , Sign Up !</string>
+    <string name="retype_password_txt">Retype Your Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_registered_txt">Already Registered , Sign In !</string>
+    <string name="empty_fields_are_not_allowed">Empty fields are not Allowed</string>
+    <string name="password_didn_t_match">Conform Password didn\'t Match</string>
+    <string name="not_valid">this is not Valid Format! Try Again</string>
+    <string name="account_was_not_created_please_sign_up">Account was not created! Please Sign up</string>
+    <string name="empty_field_enter_your_email">Empty Field! Enter Your Email</string>
+    <string name="password_empty">Password Empty!</string>
+    <string name="your_web_client_id" tools:ignore="TypographyDashes">668421258187-01m2t8ujuj8mqumvb5c2g1ujlca05u8j.apps.googleusercontent.com</string>
+    <string name="continue_with_google">continue_with_google</string>
+    <string name="todo">TODO</string>
+
+</resources>
