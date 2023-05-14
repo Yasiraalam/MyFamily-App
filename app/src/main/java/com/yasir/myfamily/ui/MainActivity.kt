@@ -36,6 +36,9 @@ private val permissions = arrayOf(
     Manifest.permission.READ_CONTACTS
 )
     private val permissionCode =100
+    override fun onStart() {
+        super.onStart()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
