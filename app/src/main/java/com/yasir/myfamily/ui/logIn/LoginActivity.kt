@@ -33,7 +33,6 @@ class LoginActivity : AppCompatActivity() {
                 .build()
             GoogleSignInClient = GoogleSignIn.getClient(this,gso)
             signIn()
-
         }
     }
     private fun signIn() {

@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myfamily.R
 import com.example.myfamily.databinding.FragmentHomeBinding
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.yasir.myfamily.constants.Constants
 import com.yasir.myfamily.sharedPrefrences.SharedPref
@@ -21,6 +23,7 @@ import com.yasir.myfamily.ui.adapters.MemberAdapter
 import com.yasir.myfamily.ui.dataClasses.ContactModel
 import com.yasir.myfamily.ui.dataClasses.MemberModel
 import com.yasir.myfamily.ui.databaseClass.MyFamilyDatabase
+import com.yasir.myfamily.ui.logIn.LoginActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -74,7 +77,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         //logout logic
         binding.iconThreeDots.setOnClickListener {
             SharedPref.putBoolean(Constants.IS_USER_LOGED_IN,false)
-            FirebaseAuth.getInstance().signOut()
+//            FirebaseAuth.getInstance().signOut()
+            val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build()
+            activity?.let { it1 ->
+                GoogleSignIn.getClient(it1,gso).signOut()
+            }
+            startActivity(Intent(activity,LoginActivity::class.java))
 
         }
     }
